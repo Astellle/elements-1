@@ -65,8 +65,7 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language (Reborn)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Reborn)" supports="Standard||Exotic" />
-			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
-			<select type="Racial Trait" name="Size (Reborn)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<select type="Racial Trait" name="Size (Reborn)" supports="ID_SIZE_MEDIUM|ID_SIZE_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_REBORN_ANCESTRAL_LEGACY" />
 			<grant type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_REBORN_DEATHLESS_NATURE" />
@@ -117,5 +116,55 @@
 		<sheet usage="{{proficiency}}/Long Rest">
 			<description>You temporarily remember glimpses of the past, perhaps faded memories from ages ago or a previous life. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check.</description>
 		</sheet>
+	</element>
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="ID_WOTC_VRGTR_RACIAL_TRAIT_HALFELF_STRENGTH">
+		<compendium display="false" />
+		<supports>Custom Ability Score Improvement Option</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="ID_WOTC_VRGTR_RACIAL_TRAIT_HALFELF_DEXTERITY">
+		<compendium display="false" />
+		<supports>Custom Ability Score Improvement Option</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="ID_WOTC_VRGTR_RACIAL_TRAIT_HALFELF_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Custom Ability Score Improvement Option</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="ID_WOTC_VRGTR_RACIAL_TRAIT_HALFELF_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Custom Ability Score Improvement Option</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten's Guide To Ravenloft" id="IID_WOTC_VRGTR_RACIAL_TRAIT_HALFELF_WISDOM">
+		<compendium display="false" />
+		<supports>Custom Ability Score Improvement Option</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
 	</element>
 </elements>
